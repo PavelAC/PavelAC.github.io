@@ -5,33 +5,40 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ENDURO-ROMANIA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" type="Image/png" href="poze/icon.jpg"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src='main.js'></script>
 </head>
 <body>
 <header>
     <!-- Nav Bar-->
+    <div class="navbar">
     <div class="logo">
+        
         <h1>ENDURO-ROMANIA</h1>
         <p>All you can ride!</p>
     </div>
+    <img src="poze/icon.jpg" class="icon"/>
     <nav class="nav-menu">
         <ul>   
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="tour.html">Tours</a></li>
             <li><a href="rent.html">Rental</a></li>
             <li><a href="about.html">About & Contact</a></li>
         </ul>
     </nav>
+</div>
     
 </header>
 <main>
     <!-- Poster -->
     <div class="poster">
-        <img src="poze/Header-enduro.jpg" class="poster-photo" width="100%">
-        <h1>ENDURO ROMANIA</h1>
-        <h2>ALL ENDURO, SIDE BY SIDE, ATV 4X4 TOURS IN ROMANIA</h2>
-        <a href="#portofolio" class="hbutton">View Services</a> 
+        <img src="poze/Header-enduro.jpg" class="poster-photo">
+        <div class="poster-content">
+            <h1>ENDURO ROMANIA</h1>
+            <h2>ALL ENDURO, SIDE BY SIDE, ATV 4X4 TOURS IN ROMANIA</h2>
+            <a href="#portofolio" class="hbutton">View Services</a>
+        </div> 
     </div>
 
         <!-- Sectie Carti -->
@@ -39,7 +46,7 @@
         <div class="container">
             <div class="card-grid">
                 <div class="card">
-                    <img src="tour_poze/motor.jpg" alt="Image cap" width="350px" height="250px">
+                    <img src="tour_poze/motor.jpg" alt="Image cap">
                     <div class="cardbody">
                         <h3 class="cardtitle">MotorBike Tour</h3>
                         <p>"Experience the thrill of the open road with our Motorbike Tour. Ride
@@ -50,7 +57,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="poze/4x4-Tours.webp" alt="Image cap" width="350px" height="250px">
+                    <img src="poze/4x4-Tours.webp" alt="Image cap">
                     <div class="cardbody" >
                         <h3 class="cardtitle">Jeep Tour</h3>
                         <p>"Embark on a rugged adventure with our Jeep Tour, designed
@@ -62,7 +69,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="tour_poze/atv.webp" alt="Image cap" width="350px" height="250px">
+                    <img src="tour_poze/atv.webp" alt="Image cap" >
                     <div class="cardbody">
                         <h3 class="cardtitle">ATV Tour</h3>
                         <p>"Get ready for an adrenaline-pumping ride with our ATV Tour. Tackle
@@ -92,13 +99,30 @@
 </main>
 <footer>
     <!-- Contacts -->
-    <div>
-        <h3>Contact Information</h3>
-        <p>Email: contact@company.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Address: 123 Main Street, City, Country</p>
+     <div class="footer">
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h3>Contact Information</h3>
+            <p>Email: contact@company.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="poze/f_icon.jpeg" alt="Facebook"></a>
+                <a href="#"><img src="poze/i_icon.jpeg" alt="instragam"></a>
+                <a href="#"><img src="poze/w_icon.jpeg" alt="LinkedIn"></a>
+            </div>
+        </div>
     </div>
-    
+    <div class="copyright">
+        <p>© All materials, content, and intellectual property, including but not limited to
+             text, images, graphics, logos, audio, video, and software, made available on
+              "ENDURO ROMANIA"’s website are not owned, the intended purpose of the used materials is a showcase. 
+        </p>
+    </div>
+</div>
 </footer>
 </body>
 </html>
