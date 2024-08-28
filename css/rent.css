@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.vehicle-container {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 7%;
+}
+
+.vehicle-section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.vehicle-title {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.vehicle-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.technical-details {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.group {
+    margin-bottom: 20px;
+}
+
+.group-heading {
+    font-size: 20px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.details-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.details-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.list-label {
+    font-weight: bold;
+}
+
+.vehicle-image {
+    flex: 1;
+    text-align: center;
+}
+
+.vehicle-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-left: 5px solid #ff6600;
+}
