@@ -1,76 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
+/* Container for the entire vehicle section */
 .vehicle-container {
     max-width: 80%;
-    margin: auto;
+    margin: 0 auto;           /* Center the container */
     padding-top: 7%;
+    padding-bottom: 5%;       /* Add bottom padding for better spacing */
 }
 
+/* Each vehicle section with a clean background and subtle shadow */
 .vehicle-section {
-    background-color: #fff;
+    background-color: #ffffff;  /* Pure white for a clean look */
     margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); /* Softer shadow for a more elegant effect */
+    border-radius: 8px;         /* Rounded corners */
     overflow: hidden;
 }
 
+/* Title of the vehicle section with distinct styling */
 .vehicle-title {
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
+    background-color: #ff8800;  /* Bright orange for emphasis */
+    color: #ffffff;             /* White text for contrast */
+    padding: 15px 25px;         /* More padding for better spacing */
     margin: 0;
     font-size: 24px;
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
 }
 
+/* Main content area with flexible layout */
 .vehicle-content {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
+/* Section for technical details with adequate spacing */
 .technical-details {
     flex: 2;
-    padding-right: 20px;
+    padding-right: 25px; /* Increased spacing for better readability */
 }
 
+/* Grouping of related technical details */
 .group {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* More space between groups */
 }
 
+/* Heading for each group of technical details */
 .group-heading {
     font-size: 20px;
-    color: #ff6600;
+    color: #ff8800; /* Consistent color scheme */
     margin-bottom: 10px;
+    border-bottom: 2px solid #ff8800; /* Underline for emphasis */
+    padding-bottom: 5px; /* Add spacing below the heading */
 }
 
+/* List of details with clean formatting */
 .details-list {
     padding-left: 0;
     list-style-type: none;
+    margin: 0;
 }
 
+/* Individual list item with justified content */
 .details-list li {
     display: flex;
     justify-content: space-between;
-    padding: 5px 0;
+    padding: 8px 10px; /* More padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Divider between items for clarity */
 }
 
+/* Label part of the list item */
 .list-label {
-    font-weight: bold;
+    font-weight: 600; /* Slightly lighter than bold for a modern look */
+    color: #333;      /* Dark gray for better readability */
 }
 
+/* Value part of the list item */
+.list-value {
+    margin: 0;
+    color: #666;      /* Medium gray for a softer look */
+}
+
+/* Image container with a defined flex ratio */
 .vehicle-image {
     flex: 1;
     text-align: center;
+    padding: 15px; /* Add padding for spacing */
 }
 
+/* Image styling with border and cover fit */
 .vehicle-image img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-left: 5px solid #ff6600;
+    border-left: 5px solid #ff8800; /* Consistent use of brand color */
+    border-radius: 0 8px 8px 0; /* Rounded corners on the image side */
 }

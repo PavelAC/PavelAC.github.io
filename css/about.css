@@ -1,44 +1,40 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+.poster {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-h1, h2, h3 {
-    color: #333;
-    margin-bottom: 10px;
+.poster-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
 }
 
-p {
-    margin-bottom: 15px;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-
-/* About Section */
-.about {
-    padding: 50px 20px;
-    background-color: white;
-}
-
-.about h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.p-content {
+    display: block;
+    padding: 70px 20px;
+    position: absolute;
+    top: 30%;
+    left: 3%;
     text-align: center;
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 40px 800px rgb(0, 0, 0);
 }
 
-.about p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    text-align: justify;
+.p-content h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.p-content p {
+ font-size: 1em;
+ font-weight: 600;
+ letter-spacing: normal;
 }
 
 /* Contact Section */
@@ -63,7 +59,7 @@ p {
     max-width: 600px;
     margin: 0 auto;
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -78,8 +74,7 @@ p {
     margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -94,7 +89,7 @@ p {
 .submit-btn {
     display: block;
     width: 100%;
-    background-color: #007BFF;
+    background-color: #ff8800d7;
     color: white;
     border: none;
     padding: 15px;
@@ -105,6 +100,6 @@ p {
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: #ff8800;
 }
 
