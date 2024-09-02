@@ -74,7 +74,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     width: calc(50% - 20px); /* Ensure two cards fit per row */
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s;
@@ -87,7 +87,7 @@
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -99,5 +99,9 @@
     font-size: 20px;
     margin-bottom: 20px;
     color: #000;
+}
+
+.cardbody p {
+    font-size: x-large;
 }
 /* end-index cards */

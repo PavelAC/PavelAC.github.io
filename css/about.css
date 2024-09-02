@@ -52,7 +52,7 @@
 .contact p {
     font-size: 1.1em;
     margin-bottom: 30px;
-    text-align: justify;
+    text-align: center;
 }
 
 .contact-form {
@@ -89,7 +89,7 @@
 .submit-btn {
     display: block;
     width: 100%;
-    background-color: #ff8800d7;
+    background-color: black;
     color: white;
     border: none;
     padding: 15px;

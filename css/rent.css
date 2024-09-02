@@ -1,96 +1,120 @@
-/* Container for the entire vehicle section */
-.vehicle-container {
-    max-width: 80%;
-    margin: 0 auto;           /* Center the container */
-    padding-top: 7%;
-    padding-bottom: 5%;       /* Add bottom padding for better spacing */
+main {
+    background-image: url(https://incert-resources.com/psb/L3RlbXBsYXRlcy9wc2IvaW1hZ2VzL3Byb2R1Y3RfaW1hZ2VzL29yaWdpbmFsX2ltYWdlcy8zMzg1X2FpX2VuXzIuanBn/enduro-driving-spielberg-1920w.jpg?1649929750); 
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
 }
 
-/* Each vehicle section with a clean background and subtle shadow */
+.vehicle-container {
+    max-width: 80%;
+    margin: 0 auto;           
+    padding-top: 10%;
+    padding-bottom: 5%;       
+}
+
+
 .vehicle-section {
-    background-color: #ffffff;  /* Pure white for a clean look */
+    background-color: #ffffff;  
     margin-bottom: 30px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); /* Softer shadow for a more elegant effect */
-    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); 
+    border-radius: 8px;        
     overflow: hidden;
 }
 
-/* Title of the vehicle section with distinct styling */
+
 .vehicle-title {
-    background-color: #ff8800;  /* Bright orange for emphasis */
-    color: #ffffff;             /* White text for contrast */
-    padding: 15px 25px;         /* More padding for better spacing */
+    background-color: black; 
+    color: #ffffff;            
+    padding: 15px 25px;         
     margin: 0;
     font-size: 24px;
-    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+    border-radius: 8px 8px 0 0; 
+    transition: background-color 0.5s;
 }
 
-/* Main content area with flexible layout */
+
 .vehicle-content {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-/* Section for technical details with adequate spacing */
+
 .technical-details {
     flex: 2;
-    padding-right: 25px; /* Increased spacing for better readability */
+    padding-right: 25px; 
 }
 
-/* Grouping of related technical details */
+
 .group {
-    margin-bottom: 25px; /* More space between groups */
+    margin-bottom: 25px; 
 }
 
-/* Heading for each group of technical details */
+
 .group-heading {
     font-size: 20px;
-    color: #ff8800; /* Consistent color scheme */
+    color: black; 
     margin-bottom: 10px;
-    border-bottom: 2px solid #ff8800; /* Underline for emphasis */
-    padding-bottom: 5px; /* Add spacing below the heading */
+    border-bottom: 2px solid black; 
+    padding-bottom: 5px; 
+    transition: color 0.5s;
+    transition: border-bottom 0.5s;
 }
 
-/* List of details with clean formatting */
+
 .details-list {
     padding-left: 0;
     list-style-type: none;
     margin: 0;
 }
 
-/* Individual list item with justified content */
+
 .details-list li {
     display: flex;
     justify-content: space-between;
-    padding: 8px 10px; /* More padding for better spacing */
-    border-bottom: 1px solid #ddd; /* Divider between items for clarity */
+    padding: 8px 10px; 
+    border-bottom: 1px solid #ddd; 
 }
 
-/* Label part of the list item */
+
 .list-label {
-    font-weight: 600; /* Slightly lighter than bold for a modern look */
-    color: #333;      /* Dark gray for better readability */
+    font-weight: 600; 
+    color: #333;     
 }
 
-/* Value part of the list item */
+
 .list-value {
     margin: 0;
-    color: #666;      /* Medium gray for a softer look */
+    color: #666;      
 }
 
-/* Image container with a defined flex ratio */
+
 .vehicle-image {
     flex: 1;
     text-align: center;
-    padding: 15px; /* Add padding for spacing */
+    padding: 15px; 
 }
 
-/* Image styling with border and cover fit */
+
 .vehicle-image img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-left: 5px solid #ff8800; /* Consistent use of brand color */
-    border-radius: 0 8px 8px 0; /* Rounded corners on the image side */
+    border-left: 5px solid black; 
+    border-radius: 0 8px 8px 0;
+    transition: border-left 0.5s;
+}
+
+.vehicle-section:hover{
+    .vehicle-title{
+        background-color: #ff8800;
+    }
+    .group-heading{
+        color: #ff8800;
+        border-bottom:2px solid #ff8800;
+    }
+    .vehicle-image img{
+        border-left: 5px solid #ff8800;
+    }
 }
