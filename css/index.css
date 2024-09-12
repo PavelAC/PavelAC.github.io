@@ -83,6 +83,7 @@
 
 .card:hover {
     background-color: #ff8800;
+    overflow: auto;
 }
 
 .card img {
@@ -105,3 +106,16 @@
     font-size: x-large;
 }
 /* end-index cards */
+
+@media screen and (max-width: 768px) {
+    .card-grid {
+        display: block;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+}

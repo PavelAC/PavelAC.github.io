@@ -19,36 +19,56 @@
             <h1>ENDURO-ROMANIA</h1>
             <p>All you can ride!</p>
         </div>
-        <a class="lk-icon" href="index.html"><img src="poze/icon.jpg" alt="ENDURO-ROMANIA ICON"></a>
+            <a class="lk-icon" href="index.html"><img src="poze/icon-removebg-preview.png" alt="ENDURO-ROMANIA ICON"></a>
         <nav class="nav-menu">
-            <ul>   
+            <!-- <ul class="sidebar">   
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tour.html">Tours</a></li>
                 <li><a href="rent.html">Rental</a></li>
                 <li><a href="about.html">About & Contact</a></li>
+            </ul> -->
+            <ul>   
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="rent.html">Rental</a></li>
+                <li><a href="forum.html">Comunity</a></li>
+                <li><a href="about.html">About & Contact</a></li>
             </ul>
         </nav>
-    </div>
-        
+        </div>
     </header>
     
     <main>
-        <section class="tours">
-            <article class="tour-item">
-                <img src="tour_poze/motor.jpg" alt="HARD ENDURO TOUR">
-                <div class="tour-info">
+                <!-- Section 1 -->
+        <div class="tours" id="hard-enduro"></div>
+        <section class="tours"> 
+            <div class="tour-info">
+                <div class="tour-header">
                     <h3>HARD ENDURO TOUR</h3>
                     <p>We will guide you through the famous tracks of REDBULL ROMANIACS.</p>
-                    <details>
-                        <summary>Get the Details!</summary>
-                        <ul>
-                            <li><strong>Route:</strong> Sibiu /Sibiu Area/Homeland of Redbull Romaniacs</li>
-                            <li><strong>Duration:</strong> 5 Days/4 nights/3 riding days</li>
-                            <li><strong>Riding Level:</strong> from 1 to 5 (1 means first time on the bike, 5 PRO)</li>
-                            <li><strong>Enduro Days:</strong> 3 days</li>
-                            <li><strong>Riding Time:</strong> 7-8 hours/day</li>
-                            <li><strong>Price:</strong> 900 EUR/pers</li>
-                        </ul>
+                </div>
+                <div class="tour-content">
+                    <div class="tour-details">
+                        <table>
+                            <tr>
+                                <th>Route</th>
+                                <th>Duration</th>
+                                <th>Riding Level</th>
+                                <th>Enduro Days</th>
+                                <th>Riding Time</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Sibiu /Sibiu Area/Homeland of Redbull Romaniacs</td>
+                                <td>5 Days/4 nights/3 riding days</td>
+                                <td>from 1 to 5 (1 means first time on the bike, 5 PRO)</td>
+                                <td>3 days</td>
+                                <td>7-8 hours/day</td>
+                                <td>900 EUR/pers</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
                         <form class="contact-form">
                             <div class="form-group">
                                 <label for="name1">Name:</label>
@@ -64,103 +84,159 @@
                             </div>
                             <button type="submit" class="submit-btn">Book Now!</button>
                         </form>
-                    </details>
                 </div>
-            </article>
+            </div>
+         </section>
 
-            <article class="tour-item">
-                <img src="tour_poze/Buggy.webp" alt="Buggy Tours">
-                <div class="tour-info">
+                   <!-- Section 2 -->
+        <div class="tours" id="buggy-tours"></div>
+        <section class="tours"> 
+            <div class="tour-info">
+                <div class="tour-header">
                     <h3>Buggy Tours</h3>
                     <p>Riding just for fun or looking for the adventure of your life, our guided adventures are all you need!</p>
-                    <details>
-                        <summary>Get the Details!</summary>
-                        <ul>
-                            <li><strong>Route:</strong> Sibiu /Sibiu Area/Homeland of Redbull Romaniacs</li>
-                            <li><strong>Duration:</strong> 5 Days/4 nights</li>
-                            <li><strong>Riding Level:</strong> from 1 to 5 (1 means first time on the bike, 5 PRO)</li>
-                            <li><strong>Offroad Days:</strong> 3 days</li>
-                            <li><strong>Riding Time:</strong> 7-8 hours/day</li>
-                            <li><strong>Price:</strong> 800 EUR/pers</li>
-                        </ul>
+                </div>
+                <div class="tour-content">
+                    <div class="tour-details">
+                        <table>
+                            <tr>
+                                <th>Route</th>
+                                <th>Duration</th>
+                                <th>Riding Level</th>
+                                <th>Offroad Days</th>
+                                <th>Riding Time</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Sibiu /Sibiu Area/Homeland of Redbull Romaniacs</td>
+                                <td>5 Days/4 nights</td>
+                                <td>from 1 to 5 (1 means first time on the bike, 5 PRO)</td>
+                                <td>3 days</td>
+                                <td>7-8 hours/day</td>
+                                <td>800 EUR/pers</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
                         <form class="contact-form">
                             <div class="form-group">
-                                <label for="name2">Name:</label>
-                                <input type="text" id="name2" name="name" required>
+                                <label for="name1">Name:</label>
+                                <input type="text" id="name1" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email2">Email:</label>
-                                <input type="email" id="email2" name="email" required>
+                                <label for="email1">Email:</label>
+                                <input type="email" id="email1" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="message2">Message:</label>
-                                <textarea id="message2" name="message" rows="5" required></textarea>
+                                <label for="message1">Message:</label>
+                                <textarea id="message1" name="message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Book Now!</button>
                         </form>
-                    </details>
                 </div>
-            </article>
+            </div>
+         </section>
 
-            <article class="tour-item">
-                <img src="tour_poze/atv.webp" alt="ATV Tour">
-                <div class="tour-info">
+                   <!-- Section 3 -->
+        <div class="tours" id="atv-tour"></div>
+        <section class="tours"> 
+            <div class="tour-info">
+                <div class="tour-header">
                     <h3>ATV Adventure Tour</h3>
-                    <p>Years of experience have taught us how to make your trip an unforgettable adventure.</p>
-                    <details>
-                        <summary>Get the Details!</summary>
-                        <ul>
-                            <li><strong>Route:</strong> Round Quad tours in Cindrel Mountains, Sureanu Mountains and Marginimea Sibiului</li>
-                            <li><strong>Duration:</strong> 5 Days / 7 Days</li>
-                            <li><strong>Riding Level:</strong> from 1 to 5 (1 means first time on the bike, 5 PRO)</li>
-                            <li><strong>Riding Time:</strong> 7-8 hours/day for round tours and 4-5 hours/day for daily tours</li>
-                            <li><strong>Price:</strong> 890 EUR/pers</li>
-                        </ul>
+            <p>Years of experience have taught us how to make your trip an unforgettable adventure.</p>
+                </div>
+                <div class="tour-content">
+                    <div class="tour-details">
+                        <table>
+                            <tr>
+                                <th>Route</th>
+                                <th>Duration</th>
+                                <th>Riding Level</th>
+                                <th>Riding Time</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Round Quad tours in Cindrel Mountains, Sureanu Mountains, and Marginimea Sibiului</td>
+                                <td>5 Days / 7 Days</td>
+                                <td>from 1 to 5 (1 means first time on the bike, 5 PRO)</td>
+                                <td>7-8 hours/day for round tours and 4-5 hours/day for daily tours</td>
+                                <td>890 EUR/pers</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
                         <form class="contact-form">
                             <div class="form-group">
-                                <label for="name3">Name:</label>
-                                <input type="text" id="name3" name="name" required>
+                                <label for="name1">Name:</label>
+                                <input type="text" id="name1" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email3">Email:</label>
-                                <input type="email" id="email3" name="email" required>
+                                <label for="email1">Email:</label>
+                                <input type="email" id="email1" name="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="message3">Message:</label>
-                                <textarea id="message3" name="message" rows="5" required></textarea>
+                                <label for="message1">Message:</label>
+                                <textarea id="message1" name="message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Book Now!</button>
                         </form>
-                    </details>
                 </div>
-            </article>
+            </div>
+         </section>
 
-            <article class="tour-item">
-                <img src="tour_poze/custom.jpeg" alt="Custom Tour">
-                <div class="tour-info">
+                   <!-- Section 4 -->
+        <div class="tours" id="custom-tour"></div>
+        <section class="tours"> 
+            <div class="tour-info">
+                <div class="tour-header">
                     <h3>Custom Tour</h3>
-                    <p>Contact us for a customized tour or choose from the options above!</p>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name4">Name:</label>
-                            <input type="text" id="name4" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email4">Email:</label>
-                            <input type="email" id="email4" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message4">Message:</label>
-                            <textarea id="message4" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Book Now!</button>
-                    </form>
+            <p>Create a personalized tour, suitable for your personal adventure.</p>
                 </div>
-            </article>
-        </section>
+                <div class="tour-content">
+                    <div class="tour-details">
+                        <table>
+                            <tr>
+                                <th>Route</th>
+                                <th>Duration</th>
+                                <th>Riding Level</th>
+                                <th>Enduro Days</th>
+                                <th>Riding Time</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Sibiu /Sibiu Area/Homeland of Redbull Romaniacs</td>
+                                <td>5 Days/4 nights/3 riding days</td>
+                                <td>from 1 to 5 (1 means first time on the bike, 5 PRO)</td>
+                                <td>3 days</td>
+                                <td>7-8 hours/day</td>
+                                <td>900 EUR/pers</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name1">Name:</label>
+                                <input type="text" id="name1" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email1">Email:</label>
+                                <input type="email" id="email1" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message1">Message:</label>
+                                <textarea id="message1" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Book Now!</button>
+                        </form>
+                </div>
+            </div>
+         </section>
+        
     </main>
+    
 
-    <footer>
+<footer>
         <!-- Contacts -->
          <div class="footer">
         <div class="footer-container">

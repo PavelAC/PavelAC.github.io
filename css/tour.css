@@ -1,96 +1,129 @@
-/* General Styles */
 
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+#hard-enduro {
+    background-image: url('../tour_poze/tour1.jpg');
+    /* filter: brightness(70%); */
+    height: 80vh;
+}
+#buggy-tours {
+    background-image: url('../tour_poze/sideBYside.jpeg');
+    filter: brightness(70%);
+    height: 80vh;
 }
 
-/* Tours Section */
+#atv-tour {
+    background-image: url('../tour_poze/atv.webp');
+    filter: brightness(70%);
+    height: 80vh;
+}
+
+#custom-tour {
+    background-image: url('../poze/back.jpg');
+    filter: brightness(70%);
+    height: 80vh;
+}
+
 .tours {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.tour-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 48%;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-.tour-item img {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: max-content;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .tour-info {
-    margin-top: 15px;
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
-.tour-info h3 {
-    margin: 10px 0;
-    color: #ff5722;
-    font-size: 1.5em;
+.tour-header {
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px;
 }
 
-.tour-info p {
-    margin-bottom: 15px;
+.tour-header h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1)
 }
 
-details {
-    margin-top: 10px;
+.tour-header p{
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-weight:500;
 }
 
-summary {
-    cursor: pointer;
+.tour-content {
+    height: 100%;
+    color: #000;
+    padding: 20px;
+    text-align: left;
+}
+
+.tour-details {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tour-details table {
+    width: 100%;
+
+}
+
+.tour-details th, .tour-details td {
+    text-align: left;
+    padding: 12px;
+    border-right: 1px solid #ddd;
+}
+
+.tour-details th {
+    background-color: #f9f9f9;
+    color: #e57300;
     font-weight: bold;
-    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
 }
 
-summary:hover {
-    text-decoration: underline;
+.tour-details td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
+.tour-details tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
 
-ul li {
-    padding: 5px 0;
-}
-
-/* Form Styles */
 .contact-form {
-    margin-top: 15px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1em;
 }
 
 .form-group textarea {
@@ -98,25 +131,25 @@ ul li {
 }
 
 .submit-btn {
-    background-color: #ff5722;
+    display: block;
+    width: 100%;
+    background-color: black;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 15px;
     border-radius: 4px;
+    font-size: 1.2em;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #e64a19;
+    background-color: #ff8800;
 }
 
-/* Responsive Styles */
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .tours {
-        flex-direction: column;
-    }
-
-    .tour-item {
-        width: 100%;
+    .tour-info {
+        max-width: 100%;
     }
 }
