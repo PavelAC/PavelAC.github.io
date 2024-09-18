@@ -1,4 +1,7 @@
-
+#hard-enduro, #buggy-tours, #atv-tour, #custom-tour {
+    background-size: cover;
+    background-position: center;
+}
 
 #hard-enduro {
     background-image: url('../tour_poze/tour1.jpg');
@@ -44,13 +47,13 @@
 }
 
 .tour-header h3 {
-    font-size: 2em;
+    font-size: 2vw;
     margin-bottom: 20px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1)
 }
 
 .tour-header p{
-    font-size: 1em;
+    font-size: 1.2vw;
     margin-bottom: 20px;
     font-weight:500;
 }
@@ -151,5 +154,54 @@
 @media screen and (max-width: 768px) {
     .tour-info {
         max-width: 100%;
+        padding: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+    }
+
+    .tour-header h3 {
+        font-size: 1.5em;
+    }
+
+    .tour-header p {
+        font-size: 0.9em;
+    }
+
+    .tour-details th, .tour-details td {
+        font-size: 1em;
+    }
+
+    #hard-enduro, #buggy-tours, #atv-tour, #custom-tour {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tour-info {
+        padding: 30px;
+    }
+
+    .contact-form {
+        width: 75%;
+        padding: 30px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        font-size: 1.1em;
     }
 }

@@ -64,9 +64,9 @@
 
 .card-grid {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    flex-wrap: wrap; 
     gap: 20px;
-    justify-content: space-between; /* Spread the cards evenly */
+    justify-content: space-between; 
 }
 
 .card {
@@ -84,6 +84,24 @@
 .card:hover {
     background-color: #ff8800;
     overflow: auto;
+}
+
+.card::-webkit-scrollbar {
+    width: 12px;
+}
+
+.card::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+    background: #333;
 }
 
 .card img {
@@ -108,6 +126,20 @@
 /* end-index cards */
 
 @media screen and (max-width: 768px) {
+    .poster-content h1 {
+        font-size: 1.5em; 
+    }
+    
+    .poster-content h2 {
+        font-size: 3em; 
+        letter-spacing: 2px;
+    }
+    
+    .hbutton {
+        padding: 12px 25px;
+        font-size: 0.9em; 
+    }
+    
     .card-grid {
         display: block;
     }
