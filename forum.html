@@ -8,35 +8,41 @@
     <link rel="icon" type="Image/png" href="poze/icon.jpg"/>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link rel="stylesheet" href="css/forum.css">
-    <script src='main.js'></script>
+    <script src='js/main.js'></script>
 </head>
 <body>
-<header>
-    <!-- Nav Bar-->
-    <div class="navbar">
-    <div class="logo">
-        
-        <h1>ENDURO-ROMANIA</h1>
-        <p>All you can ride!</p>
-    </div>
-        <a class="lk-icon" href="index.html"><img src="poze/icon-removebg-preview.png" alt="ENDURO-ROMANIA ICON"></a>
-    <nav class="nav-menu">
-        <!-- <ul class="sidebar">   
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tour.html">Tours</a></li>
-            <li><a href="rent.html">Rental</a></li>
-            <li><a href="about.html">About & Contact</a></li>
-        </ul> -->
-        <ul>   
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tour.html">Tours</a></li>
-            <li><a href="rent.html">Rental</a></li>
-            <li><a href="forum.html">Comunity</a></li>
-            <li><a href="about.html">About & Contact</a></li>
-        </ul>
-    </nav>
-    </div>
-</header>
+    <header>
+        <!-- Nav Bar-->
+    
+        <nav >
+            <ul class="sidebar">   
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eae"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="rent.html">Rental</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><img src="poze/icon-removebg-preview.png" alt="ENDURO-ROMANIA ICON"></li>
+            </ul>
+        </nav>
+        <div class="navbar">
+        <div class="logo">
+            
+            <h1>ENDURO-ROMANIA</h1>
+            <p>All you can ride!</p>
+        </div>
+            <a class="lk-icon" href="index.html"><img src="poze/icon-removebg-preview.png" alt="ENDURO-ROMANIA ICON"></a>
+        <nav class="nav-menu">
+            <ul>   
+                <li><a class="hide-link" href="index.html">Home</a></li>
+                <li><a class="hide-link" href="tour.html">Tours</a></li>
+                <li><a class="hide-link" href="rent.html">Rental</a></li>
+                <li><a class="hide-link" href="forum.html">Comunity</a></li>
+                <li><a class="hide-link" href="about.html">About & Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eae"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
 <main>
    <section class="unfinished">
             <div class="container">
