@@ -254,6 +254,31 @@ nav li:first-child :hover {
 }
 /* end-navbar */
 
+/* top button */
+.to-top {
+    position: fixed;
+    z-index: 100;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff8800;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: auto;
+}
+
+#scrollToTopBtn.visible .to-top {
+    opacity: 1;
+}
+
+/* end-top button */
+
+
 @media screen and (max-width: 768px) {
     .lk-icon{display: none;}
 
