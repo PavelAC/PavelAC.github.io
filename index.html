@@ -3,145 +3,90 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>ENDURO-ROMANIA</title>
+    <title>Pavel-Andrei</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="icon" type="Image/png" href="poze/icon.jpg"/>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
-    <script src='js/main.js'></script>
+    <meta name="description" content="Personal Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-<header>
-    <!-- Nav Bar-->
+    <header>
+        <div class="hero">
+            <nav>
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">resume</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hmore">Hello</p>
+                    <h1>I'm <span class="name">Pavel-Andrei</span></h1>
+                    <p class="hmore">"Current profession"</p>
+                    <a href="#">View CV</a>
+                </div>
+                <div class="hero-image">
+                    <img src="#" alt="Profile Image">
+                </div>
+        </div>
+    </header>
+    <main>
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis eligendi aperiam totam sunt doloribus necessitatibus facilis, maiores ullam vel quidem inventore impedit dolor esse excepturi iusto perferendis exercitationem facere repudiandae blanditiis aliquid laudantium? Recusandae delectus sint omnis vero ipsum sed, quia, officia fugiat doloremque assumenda sit consectetur neque doloribus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis eligendi aperiam totam sunt doloribus necessitatibus facilis, maiores ullam vel quidem inventore impedit dolor esse excepturi iusto perferendis exercitationem facere repudiandae blanditiis aliquid laudantium? Recusandae delectus sint omnis vero ipsum sed, quia, officia fugiat doloremque assumenda sit consectetur neque doloribus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis eligendi aperiam totam sunt doloribus necessitatibus facilis, maiores ullam vel quidem inventore impedit dolor esse excepturi iusto perferendis exercitationem facere repudiandae blanditiis aliquid laudantium? Recusandae delectus sint omnis vero ipsum sed, quia, officia fugiat doloremque assumenda sit consectetur neque doloribus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- projects -->
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <h2>My Projects</h2>
+                <p>Explore my recent work</p>
 
-    <nav >
-        <ul class="sidebar">   
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eae"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tour.html">Tours</a></li>
-            <li><a href="rent.html">Rental</a></li>
-            <li><a href="about.html">About & Contact</a></li>
-            <li><img src="poze/icon-removebg-preview.png" alt="ENDURO-ROMANIA ICON"></li>
-        </ul>
-    </nav>
-    <div class="navbar">
-    <div class="logo">
+                <div class="project-categories">
+                    ???????
+                    <a href="#">All</a>
+                    <a href="#">Web Development</a>
+                    <a href="#">Design</a>
+                    <a href="#">Completed</a>
+                </div>
+                <div class="project-gallery">
+                    <div class="project-item">
+                        enduro
+                    </div>
+                    <div class="project-item">
+                        flexgrid
+                    </div>
+                    <div class="project-item">
+                        scrollbtn
+                    </div>
+                    <div class="project-item">
+                        comingsoon
+                    </div>
+                    <div class="project-item">
+                        table-booking
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
-        <h1>ENDURO-ROMANIA</h1>
-        <p>All you can ride!</p>
-    </div>
-        <a class="lk-icon" href="index.html"><img src="poze/icon-removebg-preview.png" alt="ENDURO-ROMANIA ICON"></a>
-    <nav class="nav-menu">
-        <ul>   
-            <li><a class="hide-link" href="index.html">Home</a></li>
-            <li><a class="hide-link" href="tour.html">Tours</a></li>
-            <li><a class="hide-link" href="rent.html">Rental</a></li>
-            <li><a class="hide-link" href="forum.html">Comunity</a></li>
-            <li><a class="hide-link" href="about.html">About & Contact</a></li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eae"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav>
-    </div>
-</header>
-<main>
-    <!-- Poster -->
-    <div class="poster">
-        <img src="poze/Header-enduro.jpg" class="poster-photo">
-        <div class="poster-content">
-            <h1>ENDURO ROMANIA</h1>
-            <h2>ALL ENDURO, SIDE BY SIDE, ATV 4X4 TOURS IN ROMANIA</h2>
-            <a href="#portofolio" class="hbutton">View Services</a>
-        </div> 
-    </div>
+    </main>
+    <footer>
 
-        <!-- Sectie Carti -->
-    <section id="portofolio">
-        <div class="container">
-            <div class="card-grid">
-                <div class="card">
-                    <img src="tour_poze/motor.jpg" alt="Image cap">
-                    <div class="cardbody">
-                        <h3 class="cardtitle">MotorBike Tour</h3>
-                        <p>"Experience the thrill of the open road with our Motorbike Tour. Ride
-                             through breathtaking landscapes, weaving through scenic routes that
-                              offer an unparalleled sense of freedom and adventure. Perfect for both novice and 
-                            experienced riders, this tour promises an exhilarating journey with
-                             plenty of stops to soak in the natural beauty and local culture."</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="poze/4x4-Tours.webp" alt="Image cap">
-                    <div class="cardbody" >
-                        <h3 class="cardtitle">Jeep Tour</h3>
-                        <p>"Embark on a rugged adventure with our Jeep Tour, designed
-                             to take you off the beaten path. Traverse through challenging
-                              terrains, from rocky trails to serene valleys, in the comfort
-                               of a powerful 4x4 vehicle. This tour is perfect for thrill-seekers
-                                and nature enthusiasts alike, offering a unique way to explore hidden
-                                 gems and stunning vistas."</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="tour_poze/atv.webp" alt="Image cap" >
-                    <div class="cardbody">
-                        <h3 class="cardtitle">ATV Tour</h3>
-                        <p>"Get ready for an adrenaline-pumping ride with our ATV Tour. Tackle
-                             rough trails, sandy dunes, and muddy paths as you navigate your'
-                              all-terrain vehicle through some of the most exciting landscapes.
-                               Ideal for adventure lovers, this tour combines the excitement of
-                                off-roading with the beauty of untouched nature, providing an unforgettable experience."</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="poze/side-by-sides-tour.jpg" alt="Image cap" width="350px" height="250px">
-                    <div class="cardbody">
-                        <h3 class="cardtitle">Side-by-Side Tour</h3>
-                        <p>"Experience the thrill of the outdoors like never before with our Side-by-Side
-                             Adventure Tour! Navigate through rugged trails, breathtaking landscapes, and 
-                             hidden paths as you take the wheel of a powerful side-by-side vehicle. Whether
-                              you're seeking adrenaline-pumping action or a scenic ride through nature, this
-                               tour offers the perfect balance of excitement and exploration. Ideal for all skill
-                                levels, our guided tour ensures a safe and unforgettable adventure. Get ready to
-                                 conquer the terrain and create lasting memories!"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <a href="#" id="scrollToTopBtn">
-        <i class="to-top">
-            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eae">
-                <path d="m256-424-56-56 280-280 280 280-56 56-224-223-224 223Z"/>
-            </svg>
-        </i>
-    </a>
-</main>
-<footer>
-    <!-- Contacts -->
-     <div class="footer">
-    <div class="footer-container">
-        <div class="footer-contact">
-            <h3>Contact Information</h3>
-            <p>Email: contact@company.com</p>
-            <p>Phone: +123-456-7890</p>
-            <p>Address: 123 Main Street, City, Country</p>
-        </div>
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><img src="poze/f_icon.jpeg" alt="Facebook"></a>
-                <a href="#"><img src="poze/i_icon.jpeg" alt="instragam"></a>
-                <a href="#"><img src="poze/w_icon.jpeg" alt="LinkedIn"></a>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>© All materials, content, and intellectual property, including but not limited to
-             text, images, graphics, logos, audio, video, and software, made available on
-              "ENDURO ROMANIA"’s website are not owned, the intended purpose of the used materials is a showcase. 
-        </p>
-    </div>
-</div>
-</footer>
+    </footer>
+    
 </body>
 </html>
