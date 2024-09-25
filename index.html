@@ -17,17 +17,17 @@
         <div class="hero">
             <nav>
                 <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">resume</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#resume">resume</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="hero-content">
                 <div class="hero-text">
                     <p class="hmore">Hello</p>
                     <h1>I'm <span class="name">Pavel-Andrei</span></h1>
-                    <p class="hmore">"Current profession"</p>
+                    <p class="hmore">Web developer</p>
                     <a href="#">View CV</a>
                 </div>
                 <div class="hero-image">
@@ -46,6 +46,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis eligendi aperiam totam sunt doloribus necessitatibus facilis, maiores ullam vel quidem inventore impedit dolor esse excepturi iusto perferendis exercitationem facere repudiandae blanditiis aliquid laudantium? Recusandae delectus sint omnis vero ipsum sed, quia, officia fugiat doloremque assumenda sit consectetur neque doloribus.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis eligendi aperiam totam sunt doloribus necessitatibus facilis, maiores ullam vel quidem inventore impedit dolor esse excepturi iusto perferendis exercitationem facere repudiandae blanditiis aliquid laudantium? Recusandae delectus sint omnis vero ipsum sed, quia, officia fugiat doloremque assumenda sit consectetur neque doloribus.</p>
                     </div>
+                    <div class="about-image">
+                        <img src="your-about-image.jpg" alt="About Pavel-Andrei">
+                    </div>
                 </div>
             </div>
         </section>
@@ -56,36 +59,78 @@
                 <p>Explore my recent work</p>
 
                 <div class="project-categories">
-                    ???????
-                    <a href="#">All</a>
-                    <a href="#">Web Development</a>
-                    <a href="#">Design</a>
-                    <a href="#">Completed</a>
+                    <ul>
+                        <li><a href="#" data-category="all">All</a></li>
+                        <li><a href="#" data-category="web">Web Development</a></li>
+                        <li><a href="#" data-category="design">Design</a></li>
+                        <li><a href="#" data-category="completed">Completed</a></li>
+                    </ul>
                 </div>
                 <div class="project-gallery">
-                    <div class="project-item">
-                        enduro
+                    <div class="project-item" data-category="web">
+                        <a href="https://pavelac.github.io/Enduro/" target="_blank">
+                            <img src="resource/enduro.png" alt="Enduro Project">
+                        </a>
                     </div>
-                    <div class="project-item">
-                        flexgrid
+                    <div class="project-item" data-category="design">
+                        <a href="https://pavelac.github.io/flexbox_grid/" target="_blank">
+                            <img src="resource/felxgrid.png" alt="Flexgrid Project">
+                        </a>
                     </div>
-                    <div class="project-item">
-                        scrollbtn
+                    <div class="project-item" data-category="design">
+                        <a href="https://pavelac.github.io/Back-To-Top/" target="_blank">
+                            <img src="resource/scroll.png" alt="Scroll Project">
+                        </a>
                     </div>
-                    <div class="project-item">
-                        comingsoon
+                    <div class="project-item" data-category="design">
+                        <a href="https://pavelac.github.io/Coming-soon/" target="_blank">
+                            <img src="resource/comingsoon.png" alt="Coming Soon Project">
+                        </a>
                     </div>
-                    <div class="project-item">
-                        table-booking
+                    <div class="project-item" data-category="completed">
+                        <a href="https://table-booking-a9808.web.app/index.html" target="_blank">
+                            <img src="resource/booking.png" alt="Booking Project">
+                        </a>
                     </div>
                 </div>
+                
             </div>
         </section>
 
-        
+
+
     </main>
     <footer>
+         <!-- Contact Section -->
+<section id="contact" style="background-color: #f8f8f8; padding: 50px 0;">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Contact Me</h2>
+        </div>
 
+        <div class="contact-info">
+            <p><i class="icon-email"></i> Email: <a href="mailto:pavelandreicalin@gmail.com">pavelandreicalin@gmail.com</a></p>
+            <p><i class="icon-phone"></i> Phone: <a href="tel:+40756437361">+40 (756) 437 361</a></p>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="48px" height="48px"><path d="M 23.773438 12 C 12.855437 12 12 12.854437 12 23.773438 L 12 40.226562 C 12 51.144563 12.855438 52 23.773438 52 L 40.226562 52 C 51.144563 52 52 51.145563 52 40.226562 L 52 23.773438 C 52 12.854437 51.145563 12 40.226562 12 L 23.773438 12 z M 21.167969 16 L 42.832031 16 C 47.625031 16 48 16.374969 48 21.167969 L 48 42.832031 C 48 47.625031 47.624031 48 42.832031 48 L 21.167969 48 C 16.374969 48 16 47.624031 16 42.832031 L 16 21.167969 C 16 16.374969 16.374969 16 21.167969 16 z M 22.501953 18.503906 C 20.872953 18.503906 19.552734 19.824172 19.552734 21.451172 C 19.552734 23.078172 20.871953 24.400391 22.501953 24.400391 C 24.126953 24.400391 25.447266 23.079172 25.447266 21.451172 C 25.447266 19.826172 24.126953 18.503906 22.501953 18.503906 z M 37.933594 26.322266 C 35.473594 26.322266 33.823437 27.672172 33.148438 28.951172 L 33.078125 28.951172 L 33.078125 26.728516 L 28.228516 26.728516 L 28.228516 43 L 33.28125 43 L 33.28125 34.949219 C 33.28125 32.826219 33.687359 30.771484 36.318359 30.771484 C 38.912359 30.771484 38.945312 33.200891 38.945312 35.087891 L 38.945312 43 L 44 43 L 44 34.074219 C 44 29.692219 43.054594 26.322266 37.933594 26.322266 z M 19.972656 26.728516 L 19.972656 43 L 25.029297 43 L 25.029297 26.728516 L 19.972656 26.728516 z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="48px" height="48px"><path d="M 31.820312 12 C 13.439312 12 12 13.439312 12 31.820312 L 12 32.179688 C 12 50.560688 13.439312 52 31.820312 52 L 32.179688 52 C 50.560688 52 52 50.560688 52 32.179688 L 52 32 C 52 13.452 50.548 12 32 12 L 31.820312 12 z M 28 16 L 36 16 C 47.129 16 48 16.871 48 28 L 48 36 C 48 47.129 47.129 48 36 48 L 28 48 C 16.871 48 16 47.129 16 36 L 16 28 C 16 16.871 16.871 16 28 16 z M 41.994141 20 C 40.889141 20.003 39.997 20.900859 40 22.005859 C 40.003 23.110859 40.900859 24.003 42.005859 24 C 43.110859 23.997 44.003 23.099141 44 21.994141 C 43.997 20.889141 43.099141 19.997 41.994141 20 z M 31.976562 22 C 26.454563 22.013 21.987 26.501437 22 32.023438 C 22.013 37.545437 26.501437 42.013 32.023438 42 C 37.545437 41.987 42.013 37.498562 42 31.976562 C 41.987 26.454563 37.498562 21.987 31.976562 22 z M 31.986328 26 C 35.299328 25.992 37.992 28.673328 38 31.986328 C 38.007 35.299328 35.326672 37.992 32.013672 38 C 28.700672 38.008 26.008 35.327672 26 32.013672 C 25.992 28.700672 28.673328 26.008 31.986328 26 z"/></svg>            
+            </a>
+            <a href="https://github.com/PavelAC" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="48px" height="48px"><path d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+<div class="links">
+<a target="_blank" href="https://icons8.com/icon/32292/instagram">Instagram</a> 
+<a target="_blank" href="https://icons8.com/icon/NTCUeTIie8CC/linkedin">LinkedIn</a>
+<a target="_blank" href="https://icons8.com/icon/WCL5hPLvhUjQ/github">GitHub</a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+</div>
     </footer>
     
 </body>
