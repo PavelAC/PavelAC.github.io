@@ -131,6 +131,13 @@ nav a:hover {
     line-height: 1.8;
 }
 
+strong{
+    background: -webkit-linear-gradient(#614385 ,#516395 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
 /* end-about */
 
 
@@ -200,7 +207,7 @@ nav a:hover {
 }
 .project-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
