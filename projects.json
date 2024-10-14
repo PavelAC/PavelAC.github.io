@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Enduro",
+        "category": "App Project",
+        "description": "A simple multi-paage test app for practice.",
+        "imgSrc": "resource/enduro.png",
+        "altText": "Enduro Project",
+        "githubLink": "https://github.com/PavelAC/Enduro",
+        "websiteLink": "https://pavelac.github.io/Enduro/"
+    },
+    {
+        "title": "Flexgrid",
+        "category": "Design Project",
+        "description": "Flexbox and grid combined for responsive layouts.",
+        "imgSrc": "resource/felxgrid.png",
+        "altText": "Flexgrid Project",
+        "githubLink": "https://github.com/PavelAC/flexbox_grid",
+        "websiteLink": "https://pavelac.github.io/flexbox_grid/"
+    },
+    {
+        "title": "Back to Top",
+        "category": "Design Project",
+        "description": "A smooth scrolling 'back to top' button implementation.",
+        "imgSrc": "resource/scroll.png",
+        "altText": "Scroll Project",
+        "githubLink": "https://github.com/PavelAC/Back-To-Top",
+        "websiteLink": "https://pavelac.github.io/Back-To-Top/"
+    },
+    {
+        "title": "Coming Soon",
+        "category": "Design Project",
+        "description": "A minimalistic 'coming soon' landing page.",
+        "imgSrc": "resource/comingsoon.png",
+        "altText": "Coming Soon Project",
+        "githubLink": "https://github.com/PavelAC/Coming-soon",
+        "websiteLink": "https://pavelac.github.io/Coming-soon/"
+    },
+    {
+        "title": "Table Booking",
+        "category": "App Project",
+        "description": "A web-based table booking system.",
+        "imgSrc": "resource/booking.png",
+        "altText": "Booking Project",
+        "githubLink": "#",
+        "websiteLink": "https://table-booking-a9808.web.app/index.html"
+    },
+    {
+        "title": "Tip Calculator",
+        "category": "Java Project",
+        "description": "A tip calculator to compute tips easily.",
+        "imgSrc": "resource/tip.png",
+        "altText": "Tip Calculator",
+        "githubLink": "https://github.com/PavelAC/TipCalculator",
+        "websiteLink": "https://pavelac.github.io/TipCalculator/"
+    },
+    {
+        "title": "Meniu",
+        "category": "Java Project",
+        "description": "A layered menu with various customization options.",
+        "imgSrc": "resource/layerd.png",
+        "altText": "Meniu Project",
+        "githubLink": "https://github.com/PavelAC/Meniu",
+        "websiteLink": "https://pavelac.github.io/Meniu/"
+    },
+    {
+        "title": "Exchange Rates",
+        "category": "Java Project",
+        "description": "A currency exchange rate calculator.",
+        "imgSrc": "resource/exchange.png",
+        "altText": "Exchange Rates",
+        "githubLink": "https://github.com/PavelAC/ExchangeRates",
+        "websiteLink": "https://pavelac.github.io/ExchangeRates/"
+    }
+]
