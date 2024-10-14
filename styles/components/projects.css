@@ -51,6 +51,7 @@
 
 .work__project-btn{
     font-size: var(--size-sm);
+    margin: 0 0.5em;
 }
 
 .work__subtitle{
@@ -111,7 +112,8 @@
         grid-area: image3;
     }
     .work__image4{
-        grid-area: imgrid-area}
+        grid-area: image4
+    }
     .work__image5{
         grid-area: image5;
     }
