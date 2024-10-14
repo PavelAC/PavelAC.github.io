@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const filters = document.querySelectorAll(".filter");
     const projectItems = document.querySelectorAll(".project-item");
