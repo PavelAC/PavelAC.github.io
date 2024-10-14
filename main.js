@@ -25,47 +25,39 @@
 //     });
 // });
 
-    // Fetch the JSON file and dynamically render the projects
     fetch('projects.json')
         .then(response => response.json())
         .then(projects => {
             const projectContainer = document.getElementById('projectContainer');
 
             projects.forEach(project => {
-                // Create the project container div
+
                 const workContainer = document.createElement('div');
                 workContainer.classList.add('work__container');
 
-                // Create the project title
                 const title = document.createElement('h3');
                 title.classList.add('work__project-title');
                 title.textContent = project.title;
 
-                // Create the image wrapper and image
                 const imgWrapper = document.createElement('div');
                 imgWrapper.classList.add('work__img-wrapper', `work__image${projects.indexOf(project) + 1}`);
                 const img = document.createElement('img');
                 img.src = project.imgSrc;
                 img.alt = project.altText;
 
-                // Append image to the wrapper
                 imgWrapper.appendChild(img);
 
-                // Create the project content div
                 const content = document.createElement('div');
                 content.classList.add('work__project', `work__content${projects.indexOf(project) + 1}`);
 
-                // Create the subtitle
                 const subtitle = document.createElement('h3');
                 subtitle.classList.add('work__subtitle');
                 subtitle.textContent = project.category;
 
-                // Create the project description
                 const description = document.createElement('p');
                 description.classList.add('work__project-description');
                 description.textContent = project.description;
 
-                // Create the buttons
                 const githubBtn = document.createElement('a');
                 githubBtn.classList.add('btn', 'work__project-btn');
                 githubBtn.href = project.githubLink;
@@ -77,18 +69,15 @@
                 websiteBtn.target = '_blank';
                 websiteBtn.textContent = 'Website';
 
-                // Append all elements to the content div
                 content.appendChild(subtitle);
                 content.appendChild(description);
                 content.appendChild(githubBtn);
                 content.appendChild(websiteBtn);
 
-                // Append title, imgWrapper, and content to the project container
                 workContainer.appendChild(title);
                 workContainer.appendChild(imgWrapper);
                 workContainer.appendChild(content);
 
-                // Append the project container to the main container
                 projectContainer.appendChild(workContainer);
             });
         })
