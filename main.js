@@ -1,46 +1,33 @@
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const filters = document.querySelectorAll(".filter");
-//     const projectItems = document.querySelectorAll(".project-item");
-
-//     filters.forEach(filter => {
-//         filter.addEventListener("click", function(e) {
-//             e.preventDefault();
+fetch('projects.json')
+    .then(response => response.json())
+    .then(projects => {
+        const projectContainer = document.getElementById('projectContainer');
+        const filterButtons = document.querySelectorAll('.work__filter-btn');
+        
+        // Function to render all projects
+        function renderProjects(projectsToRender) {
+            // Clear the container first
+            projectContainer.innerHTML = '';
             
-//             // Remove active class from all filters
-//             filters.forEach(f => f.classList.remove("active"));
-//             this.classList.add("active");
-
-//             const category = this.getAttribute("data-category");
-
-//             projectItems.forEach(item => {
-//                 const itemCategory = item.getAttribute("data-category");
-//                 if (category === "all" || itemCategory === category) {
-//                     item.style.display = "block";
-//                 } else {
-//                     item.style.display = "none";
-//                 }
-//             });
-//         });
-//     });
-// });
-
-    fetch('projects.json')
-        .then(response => response.json())
-        .then(projects => {
-            const projectContainer = document.getElementById('projectContainer');
-
-            projects.forEach(project => {
-
+            projectsToRender.forEach((project, index) => {
                 const workContainer = document.createElement('div');
                 workContainer.classList.add('work__container');
+                
+                // Add odd/even class for alternating layout
+                if (index % 2 === 0) {
+                    workContainer.classList.add('odd-project');
+                } else {
+                    workContainer.classList.add('even-project');
+                }
+                
+                workContainer.setAttribute('data-category', project.category);
 
                 const title = document.createElement('h3');
                 title.classList.add('work__project-title');
                 title.textContent = project.title;
 
                 const imgWrapper = document.createElement('div');
-                imgWrapper.classList.add('work__img-wrapper', `work__image${projects.indexOf(project) + 1}`);
+                imgWrapper.classList.add('work__img-wrapper');
                 const img = document.createElement('img');
                 img.src = project.imgSrc;
                 img.alt = project.altText;
@@ -48,7 +35,7 @@
                 imgWrapper.appendChild(img);
 
                 const content = document.createElement('div');
-                content.classList.add('work__project', `work__content${projects.indexOf(project) + 1}`);
+                content.classList.add('work__project');
 
                 const subtitle = document.createElement('h3');
                 subtitle.classList.add('work__subtitle');
@@ -80,5 +67,32 @@
 
                 projectContainer.appendChild(workContainer);
             });
-        })
-        .catch(error => console.error('Error loading projects:', error));
+        }
+        
+        // Initial render of all projects
+        renderProjects(projects);
+        
+        // Add click event listeners to filter buttons
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const selectedCategory = button.getAttribute('data-category');
+                
+                // Filter projects based on selected category
+                if (selectedCategory === 'all') {
+                    renderProjects(projects);
+                } else {
+                    const filteredProjects = projects.filter(project => 
+                        project.category === selectedCategory
+                    );
+                    renderProjects(filteredProjects);
+                }
+            });
+        });
+    })
+    .catch(error => console.error('Error loading projects:', error));
