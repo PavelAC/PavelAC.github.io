@@ -9,6 +9,33 @@
         "websiteLink": "https://pavelac.github.io/Enduro/"
     },
     {
+        "title": "Template",
+        "category": "App Project",
+        "description": "A simple template test app for practice.",
+        "imgSrc": "resource/template.png",
+        "altText": "template Project",
+        "githubLink": "https://github.com/PavelAC/Basic-Template",
+        "websiteLink": "https://basic-template-chi.vercel.app"
+    },
+    {
+        "title": "CigFree",
+        "category": "App Project",
+        "description": "A pwa test app for practice.",
+        "imgSrc": "resource/smoke-tracker.png",
+        "altText": "CigFree Project",
+        "githubLink": "https://github.com/PavelAC/CigFree-pwa",
+        "websiteLink": "https://cig-free-pwa.vercel.app"
+    },
+    {
+        "title": "School Management",
+        "category": "App Project",
+        "description": "A simple NgRx test app for practice.",
+        "imgSrc": "resource/school-mng.png",
+        "altText": "School Management Project",
+        "githubLink": "https://github.com/PavelAC/school-mngr",
+        "websiteLink": "https://school-mngr-wine.vercel.app"
+    },
+    {
         "title": "Flexgrid",
         "category": "Design Project",
         "description": "Flexbox and grid combined for responsive layouts.",
