@@ -39,8 +39,8 @@
     transition: background-color 0.3s;
 }
 
-.work__img-wrapper::after:hover{
-    background-color: gba(79, 70, 229, 0.3);
+.work__img-wrapper:hover::after{
+    background-color: rgba(79, 70, 229, 0.3);
 }
 
 .work__project-description{
